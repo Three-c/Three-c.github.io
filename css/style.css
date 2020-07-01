@@ -18,7 +18,7 @@ a:hover {
 }
 .footer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #ccc;
 }
 .clear {
@@ -43,7 +43,7 @@ a:hover {
 .list {
   padding-left: 25px;
   padding-right: 25px;
-  height: 30px;
+  height: 20px;
   cursor: pointer;
 }
 .postname {
@@ -94,6 +94,12 @@ a:hover {
 hr {
   border-color: #58606b;
 }
+.pagenav {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
 .posts .replay-btn {
   background-color: #4b5e7b;
   width: 40px;
@@ -110,7 +116,7 @@ hr {
   line-height: 40px;
   margin-bottom: 10px;
 }
-.posts .post-content a {
+.posts .post-content {
   color: #699be9;
 }
 .posts .fhr {
@@ -123,6 +129,12 @@ hr {
 .posts .highlight .code .hljs {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.posts .pagecatetags {
+  float: left;
+}
+.posts .pagetags {
+  float: left;
 }
 .post-content .octicon {
   display: inline-block;
@@ -876,6 +888,15 @@ hr {
   width: 100%;
   margin-left: 0px;
 }
+.categoriestitle {
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.categoriesname {
+  text-align: center;
+}
 .highlight table td,
 .highlight table th,
 .highlight table tr {
@@ -1204,13 +1225,13 @@ label.el-checkbox {
 .breadcrumb>li+li:before {
   padding: 0 5px;
   color: #ccc;
-  content: "&\00a0";
+  content: "\00a0";
 }
 .breadcrumb>.active {
   color: #777;
 }
 .breadcrumbhr {
-  margin-top: -15px;
+  margin-top: 10px;
   margin-bottom: -15px;
 }
 .vcomments {
