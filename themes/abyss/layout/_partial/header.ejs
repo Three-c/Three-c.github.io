@@ -1,0 +1,13 @@
+<div class="cui-navbar<% if (theme.nav_fixed){ %> cui-navbar-fixed<% } %> cui-shadow-light-theme cui-color-theme animate__animated animate__fadeInUp">
+		<div class="cui-navbar-left-with-icon">
+		<a class="cui-btn-icon cui-hover-btn cui-color-theme cui-navbar-left-icon" cui-drawer="open"><i class="mdui-icon material-icons">&#xe5d2;</i></a>
+			<div class="cui-typo-title cui-navbar-left-title cui-inline" style="font-style:italic;font-weight:bolder;"><a href="<%- url_for() %>" class="cui-color-theme"><%= config.title %></a></div>
+		</div>
+		<div class="cui-navbar-right">
+			<div class="cui-typo-subtitle cui-navbar-left-title cui-inline" style="font-weight:bolder;">
+				<% for (var i in theme.menu){ %>
+				  <a  class="cui-color-theme" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<% } %>
+			</div>
+		</div>
+	</div>

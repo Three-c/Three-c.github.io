@@ -1,0 +1,126 @@
+if sidebar is bottom
+  @import "sidebar-bottom"
+else
+  @import "sidebar-aside"
+.cui-color-theme-dark .widget
+  background #2D3034
+  color #FFF
+.cui-color-theme-dark .widget-title
+  color #FFF
+.widget
+  line-height: line-height
+  word-wrap: break-word
+  font-size: 0.9em
+  ul, ol
+    list-style: none
+    margin: 0
+    ul, ol
+      margin: 0 20px
+    ol
+      list-style: decimal
+
+.category-list-count
+.tag-list-count
+.archive-list-count
+  padding-left: 5px
+  color: color-grey
+  font-size: 0.85em
+  &:before
+    content: "("
+  &:after
+    content: ")"
+
+.tagcloud
+  a
+    margin-right: 5px
+    display: inline-block
+.blogger-avatar
+  width 120px
+  height 120px
+  border-radius 1000px
+  margin-bottom 10px
+.blogger-motto
+  color color-grey
+  font-size 15px
+  margin-top 15px
+.blogger
+  text-align center
+  margin auto
+  padding 30px
+.blogger-btn
+  width 70%
+  margin-top 20px
+
+.tagcloud a {
+	text-decoration: none;
+	position: relative;
+	color: #0A73FF;
+}
+
+.tagcloud a:after {
+	content: "";
+	width: 0;
+	height: 1px;
+	border-radius: 1000px;
+	position: absolute;
+	background: #0A73FF;
+	top: 100%;
+	left: 0%;
+	transition: all .4s;
+	z-index: 999;
+}
+
+.tagcloud a:hover:after {
+	left: 0%;
+	width: 100%;
+}
+a.category-list-link,.tag-list-link
+  text-decoration: none;
+  position: relative;
+  color: #0A73FF;
+a.category-list-link:after,.tag-list-link:after
+	content: "";
+	width: 0;
+	height: 1px;
+	border-radius: 1000px;
+	position: absolute;
+	background: #0A73FF;
+	top: 100%;
+	left: 0%;
+	transition: all .4s;
+	z-index: 999;
+a.category-list-link:hover:after,.tag-list-link:hover:after
+	left: 0%;
+	width: 100%;
+.cui-drawer-wrapper .widget
+  margin-top -20px
+.cui-drawer-wrapper .widget-wrap
+  box-shadow none
+  -webkit-box-shadow none
+.navlist-active
+  font-weight bold
+  font-size 16px
+  
+.theme-dot
+  display inline-block
+  width 25px
+  height 25px
+  border-radius 1000px
+  vertical-align middle
+  transition all .5s ease-in-out
+  &:hover
+    width 30px
+    height 30px
+    transition all .5s ease-in-out
+	transform scale(1.2)
+
+.dol-text-color
+  color #2e2f3c
+a.dol-text-color
+  color #2e2f3c
+.cui-color-theme-dark .dol-text-color
+  color #FFF
+  
+input#local-search-input
+  height: 30px;
+  transition all .5s ease-in-out
